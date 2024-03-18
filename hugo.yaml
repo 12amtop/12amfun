@@ -1,0 +1,38 @@
+baseURL: '12am.fun'
+languageCode: zh
+title: AM
+theme: ["PaperMod"]
+
+
+params:
+  homeInfoParams:
+    Title: "欢迎"
+    content: "keep moving"
+  socialIcons:
+    - name: github
+      url: "https://github.com/12amtop"
+  showBreadCrumbs: true
+  showReadTime: true
+  # showShareButtons: true
+  showPostNavLinks: true
+  hideFooter: true
+  hideFooter: true
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: archives
+      url: /archives/
+      weight: 30
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 40

@@ -1,14 +1,8 @@
----
-title: "First"
-date: 2022-12-22T08:39:46+08:00
-draft: false
-tags: ['html','css']
-categories: ['frontend']
-cover: 
-    image: img/cover1.jpg
-    alt: 'single girl'
-    caption: 'wow'
----
++++
+title = "Blog"
+date = 2024-03-18T15:57:54+08:00
+draft = false
++++
 
-# hello!!! welcome to my blog
-
+# Blog
+## 2024-03-18

@@ -1,4 +1,4 @@
-baseURL: '12am.fun'
+baseURL: 'https://12amfun.netlify.app/'
 languageCode: zh
 title: AM
 theme: ["PaperMod"]

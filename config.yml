@@ -3,7 +3,6 @@ languageCode: zh
 title: AM
 theme: ["PaperMod"]
 
-
 params:
   homeInfoParams:
     Title: "欢迎"

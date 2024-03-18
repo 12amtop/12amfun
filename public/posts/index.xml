@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on AM</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on AM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 18 Mar 2024 16:24:21 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo &#43; github &#43; netlify构建blog</title>
+      <link>http://localhost:1313/posts/blog/</link>
+      <pubDate>Mon, 18 Mar 2024 16:24:21 +0800</pubDate>
+      <guid>http://localhost:1313/posts/blog/</guid>
+      <description>一、安装 安装hugo (windows)
+winget install Hugo.Hugo.Extended 其他的根据官网安装
+hugo version //hugo v0.123.8-5fed9c591b694f314e5939548e11cc3dcb79a79c+extended windows/amd64 BuildDate=2024-03-07T13:14:42Z VendorInfo=gohugoio 成功 git安装略过
+二、创建页面 hugo new site test --format yaml 安装主题 （其他的可以自己试，根据文档设置，主题官网）
+git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 编辑hugo.yaml 添加 theme=PaperMod
+添加第一篇文章 hugo new posts/first.md 注意：自动生成的md文件中 draft 默认为true，改成false 建议不使用，因为我设置的是yaml，创建一个yaml格式的更好用
+--- title: &amp;#34;First&amp;#34; date: 2022-12-22T08:39:46+08:00 draft: false tags: [&amp;#39;html&amp;#39;,&amp;#39;css&amp;#39;] categories: [&amp;#39;frontend&amp;#39;] cover: image: img/cover1.jpg alt: &amp;#39;single girl&amp;#39; caption: &amp;#39;wow&amp;#39; --- # hello!!! welcome to my blog hugo server # 页面启动 添加参数</description>
+    </item>
+  </channel>
+</rss>

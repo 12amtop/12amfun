@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>12am.fun/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>12am.fun/categories/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/css/</loc>
+    <loc>12am.fun/tags/css/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2223/</loc>
+    <loc>12am.fun/posts/2223/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/331/</loc>
+    <loc>12am.fun/posts/331/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/first/</loc>
+    <loc>12am.fun/posts/first/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/frontend/</loc>
+    <loc>12am.fun/categories/frontend/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/html/</loc>
+    <loc>12am.fun/tags/html/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>12am.fun/posts/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>12am.fun/tags/</loc>
     <lastmod>2022-12-22T08:39:46+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>12am.fun/about/</loc>
   </url><url>
-    <loc>//localhost:1313/archives/</loc>
+    <loc>12am.fun/archives/</loc>
   </url>
 </urlset>

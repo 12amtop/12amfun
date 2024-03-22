@@ -5,9 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>A | AM</title>
-<meta name="keywords" content="">
-<meta name="description" content="A ">
+<title>hugo &#43; github &#43; netlify构建blog | AM</title>
+<meta name="keywords" content="居中, css">
+<meta name="description" content="前言 居中一直是一个让人头疼的问题，可以直接使用 flex 或者 grid 来直接做成效果，也可以通过一些技巧来实现同样的效果，比如一个内联元素居中可以使用 flex 的 justify-content:center; 和 align-items: center;来实现，也可以通过 text-align: center 和 line-height 来实现。需要记住，这篇文章的并不是来比较各个方法之间的优劣，只是对我所学的居中方法的梳理。 Go!
+一、水平居中 1.内联元素 内联元素居中需要在父元素上使用text-align: center; inline-block （宽度和长度生效） 父元素为块级元素使用text-align: center;水平居中。
+2.块级元素水平居中 （1）单个元素 使用margin:0 auto;
+（2）父元素为块级元素 1) 使用 table 布局左右自适应 .inner { display: table; margin: 0 auto; } 2) 多个元素在一行居中 i.将子元素设置为display:inline-block; 父元素设置text-align: center;，实现水平居中
+ii.使用display: flex; 父元素使用 display: flex; justify-cntent: center;
+3) 多个元素在一列中居中 父元素text-align:center; ，子元素margin: 0 auto;
+(3) 使用定位(position)居中 父元素position: relative;，子元素position: absolute;
+position: absolute; left: 50%; transform: translateX(-50%); 4、浮动元素水平居中 清除浮动。">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/a/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.4599eadb9eb2ad3d0a8d6827b41a8fda8f2f4af226b63466c09c5fddbc8706b7.css" integrity="sha256-RZnq256yrT0KjWgntBqP2o8vSvImtjRmwJxf3byHBrc=" rel="preload stylesheet" as="style">
@@ -127,25 +134,150 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      A
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
+      hugo &#43; github &#43; netlify构建blog
     </h1>
-    <div class="post-meta"><span title='2024-03-18 16:48:49 +0800 CST'>March 18, 2024</span>
+    <div class="post-meta"><span title='2024-03-20 16:24:21 +0800 CST'>March 20, 2024</span>
 
 </div>
   </header> 
-  <div class="post-content"><h1 id="a">A<a hidden class="anchor" aria-hidden="true" href="#a">#</a></h1>
-
+<figure class="entry-cover"><img loading="eager" src="https://raw.githubusercontent.com/stevechen1/pic/master/001.png" alt="room">
+        <p>room</p>
+</figure>
+  <div class="post-content"><h1 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h1>
+<p>居中一直是一个让人头疼的问题，可以直接使用 flex 或者 grid 来直接做成效果，也可以通过一些技巧来实现同样的效果，比如一个内联元素居中可以使用 flex 的 justify-content:center; 和 align-items: center;来实现，也可以通过 text-align: center 和 line-height 来实现。需要记住，这篇文章的并不是来比较各个方法之间的优劣，只是对我所学的居中方法的梳理。
+Go!</p>
+<h1 id="一水平居中">一、水平居中<a hidden class="anchor" aria-hidden="true" href="#一水平居中">#</a></h1>
+<h2 id="1内联元素">1.内联元素<a hidden class="anchor" aria-hidden="true" href="#1内联元素">#</a></h2>
+<p>内联元素居中需要在父元素上使用<code>text-align: center;</code>
+inline-block （宽度和长度生效）
+父元素为块级元素使用<code>text-align: center;</code>水平居中。</p>
+<h2 id="2块级元素水平居中">2.块级元素水平居中<a hidden class="anchor" aria-hidden="true" href="#2块级元素水平居中">#</a></h2>
+<h3 id="1单个元素">（1）单个元素<a hidden class="anchor" aria-hidden="true" href="#1单个元素">#</a></h3>
+<p>使用<code>margin:0 auto;</code></p>
+<h3 id="2父元素为块级元素">（2）父元素为块级元素<a hidden class="anchor" aria-hidden="true" href="#2父元素为块级元素">#</a></h3>
+<h4 id="1-使用-table-布局左右自适应">1) 使用 table 布局左右自适应<a hidden class="anchor" aria-hidden="true" href="#1-使用-table-布局左右自适应">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">inner</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">table</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="2-多个元素在一行居中">2) 多个元素在一行居中<a hidden class="anchor" aria-hidden="true" href="#2-多个元素在一行居中">#</a></h4>
+<h4 id="i将子元素设置为displayinline-block">i.将子元素设置为<code>display:inline-block;</code><a hidden class="anchor" aria-hidden="true" href="#i将子元素设置为displayinline-block">#</a></h4>
+<p>父元素设置<code>text-align: center;</code>，实现水平居中</p>
+<h4 id="ii使用display-flex">ii.使用<code>display: flex;</code><a hidden class="anchor" aria-hidden="true" href="#ii使用display-flex">#</a></h4>
+<p>父元素使用 <code>display: flex; justify-cntent: center;</code></p>
+<h3 id="3-多个元素在一列中居中">3) 多个元素在一列中居中<a hidden class="anchor" aria-hidden="true" href="#3-多个元素在一列中居中">#</a></h3>
+<p>父元素<code>text-align:center;</code> ，子元素<code>margin: 0 auto;</code></p>
+<h2 id="3-使用定位position居中">(3) 使用定位(position)居中<a hidden class="anchor" aria-hidden="true" href="#3-使用定位position居中">#</a></h2>
+<p>父元素<code>position: relative;</code>，子元素<code>position: absolute;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">position</span><span style="color:#f92672">:</span> <span style="color:#f92672">absolute</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">left</span><span style="color:#f92672">:</span> <span style="color:#f92672">50</span><span style="color:#f92672">%;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">transform</span><span style="color:#f92672">:</span> <span style="color:#f92672">translateX</span><span style="color:#f92672">(</span><span style="color:#f92672">-50</span><span style="color:#f92672">%);</span>
+</span></span></code></pre></div><h2 id="4浮动元素水平居中">4、浮动元素水平居中<a hidden class="anchor" aria-hidden="true" href="#4浮动元素水平居中">#</a></h2>
+<p>清除浮动。</p>
+<h4 id="1-浮动元素定宽位相负宽一半-margin">(1) 浮动元素定宽：位相+负宽一半 margin<a hidden class="anchor" aria-hidden="true" href="#1-浮动元素定宽位相负宽一半-margin">#</a></h4>
+<p>相对定位。
+使用相对定位<code>position: absolute;</code>+ <code>margin-left: -自身宽度的一半</code></p>
+<h4 id="2-浮动元素不指定宽度父子位相左浮左右各-50">(2 浮动元素不指定宽度：父子位相左浮，左右各 50%<a hidden class="anchor" aria-hidden="true" href="#2-浮动元素不指定宽度父子位相左浮左右各-50">#</a></h4>
+<p>子元素 1<code>left: 50%;</code> 子元素 2<code>right:50%;</code></p>
+<h3 id="3-flex-布局">(3) flex 布局<a hidden class="anchor" aria-hidden="true" href="#3-flex-布局">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">display</span><span style="color:#f92672">:</span> <span style="color:#f92672">flex</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">justify-content</span><span style="color:#f92672">:</span> <span style="color:#f92672">center</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><h1 id="二垂直居中">二、垂直居中<a hidden class="anchor" aria-hidden="true" href="#二垂直居中">#</a></h1>
+<h2 id="1内联元素垂直居中">1、内联元素垂直居中<a hidden class="anchor" aria-hidden="true" href="#1内联元素垂直居中">#</a></h2>
+<h3 id="1单行内联元素">(1)单行内联元素<a hidden class="anchor" aria-hidden="true" href="#1单行内联元素">#</a></h3>
+<h4 id="1-使用-padding">1) 使用 padding<a hidden class="anchor" aria-hidden="true" href="#1-使用-padding">#</a></h4>
+<p>上下 padding 相等。</p>
+<h4 id="2使用-line-height">2)、使用 line-height<a hidden class="anchor" aria-hidden="true" href="#2使用-line-height">#</a></h4>
+<p><code>line-height=val</code>，val 使用的是父元素的高度。</p>
+<h3 id="2多行内联元素">(2)多行内联元素<a hidden class="anchor" aria-hidden="true" href="#2多行内联元素">#</a></h3>
+<h4 id="1使用displaytable">1）使用<code>display:table;</code><a hidden class="anchor" aria-hidden="true" href="#1使用displaytable">#</a></h4>
+<p>父元素<code>display: table-cell; vertical-align: middle;</code>
+子元素 <code>display: inline-block;</code></p>
+<h4 id="2-flex">2) flex<a hidden class="anchor" aria-hidden="true" href="#2-flex">#</a></h4>
+<p>父元素有高度
+父元素<code>display:flex;</code>
+子元素 <code>flex-direction: column; justify-content: center;</code></p>
+<h4 id="3-伪元素">3) 伪元素<a hidden class="anchor" aria-hidden="true" href="#3-伪元素">#</a></h4>
+<p>父元素有高度，父元素使用<code>::before</code>或 <code>::after</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">display</span><span style="color:#f92672">:</span> <span style="color:#f92672">inline-block</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">vertical</span><span style="color:#f92672">:</span> <span style="color:#f92672">middle</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">height</span><span style="color:#f92672">:</span> <span style="color:#f92672">100</span><span style="color:#f92672">%;</span> <span style="color:#75715e">/*需要高度撑开 */</span>
+</span></span></code></pre></div><p>子元素</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">vertical-align</span><span style="color:#f92672">:</span> <span style="color:#f92672">middle</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><h2 id="2块级元素垂直居中">2、块级元素垂直居中<a hidden class="anchor" aria-hidden="true" href="#2块级元素垂直居中">#</a></h2>
+<h3 id="1-定高">(1) 定高<a hidden class="anchor" aria-hidden="true" href="#1-定高">#</a></h3>
+<p>父子相对子绝对+上 50%+负上高度 margin
+父元素<code>position: relative;</code>
+子元素</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>	<span style="color:#f92672">position</span><span style="color:#f92672">:</span> <span style="color:#f92672">absolute</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">top</span><span style="color:#f92672">:</span> <span style="color:#f92672">calc</span><span style="color:#f92672">(</span><span style="color:#f92672">50</span><span style="color:#f92672">%</span> <span style="color:#f92672">-</span> <span style="color:#f92672">自身高度的一半</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">line-height</span><span style="color:#f92672">:</span> <span style="color:#f92672">自身高度</span>
+</span></span></code></pre></div><h3 id="2不定高">(2)不定高<a hidden class="anchor" aria-hidden="true" href="#2不定高">#</a></h3>
+<h4 id="1-父相对子绝对--上-50上偏移-50">1) 父相对子绝对 + 上 50%+上偏移 50%<a hidden class="anchor" aria-hidden="true" href="#1-父相对子绝对--上-50上偏移-50">#</a></h4>
+<p>父<code>position: relative;</code>
+子</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">position</span><span style="color:#f92672">:</span> <span style="color:#f92672">absolute</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">left</span><span style="color:#f92672">:</span> <span style="color:#f92672">50</span><span style="color:#f92672">%;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">top</span><span style="color:#f92672">:</span> <span style="color:#f92672">50</span><span style="color:#f92672">%;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">transform</span><span style="color:#f92672">:</span> <span style="color:#f92672">translateY</span><span style="color:#f92672">(</span><span style="color:#f92672">-50</span><span style="color:#f92672">%);</span>
+</span></span></code></pre></div><h4 id="2-table">2) table<a hidden class="anchor" aria-hidden="true" href="#2-table">#</a></h4>
+<p>父元素</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>	<span style="color:#f92672">display</span><span style="color:#f92672">:</span> <span style="color:#f92672">table-cell</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">vertical-align</span><span style="color:#f92672">:</span> <span style="color:#f92672">middle</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><p>子
+<code>display: inline-block;</code></p>
+<h4 id="3-flex">3) flex<a hidden class="anchor" aria-hidden="true" href="#3-flex">#</a></h4>
+<p>父</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">display</span><span style="color:#f92672">:</span> <span style="color:#f92672">flex</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">align-items</span><span style="color:#f92672">:</span> <span style="color:#f92672">center</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><h1 id="三水平垂直居中">三、水平垂直居中!!!!!!<a hidden class="anchor" aria-hidden="true" href="#三水平垂直居中">#</a></h1>
+<h2 id="1flex-布局">1、flex 布局<a hidden class="anchor" aria-hidden="true" href="#1flex-布局">#</a></h2>
+<p>父元素</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">display</span><span style="color:#f92672">:</span> <span style="color:#f92672">flex</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">align-items</span><span style="color:#f92672">:</span> <span style="color:#f92672">center</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">justify-content</span><span style="color:#f92672">:</span> <span style="color:#f92672">center</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><h2 id="2绝对定位">2、绝对定位<a hidden class="anchor" aria-hidden="true" href="#2绝对定位">#</a></h2>
+<h3 id="1-定宽高">(1) 定宽高<a hidden class="anchor" aria-hidden="true" href="#1-定宽高">#</a></h3>
+<p>父 <code>position: relativie;</code>
+子</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">position</span><span style="color:#f92672">:</span> <span style="color:#f92672">absolute</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">top</span><span style="color:#f92672">:</span> <span style="color:#f92672">calc</span><span style="color:#f92672">(</span><span style="color:#f92672">50</span><span style="color:#f92672">%</span> <span style="color:#f92672">-</span> <span style="color:#f92672">自身高度的一半</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">left</span><span style="color:#f92672">:</span> <span style="color:#f92672">calc</span><span style="color:#f92672">(</span><span style="color:#f92672">50</span><span style="color:#f92672">%</span> <span style="color:#f92672">-</span> <span style="color:#f92672">自身高度的一半</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div><h3 id="2宽高位置-推荐这种">(2)宽高位置 (推荐这种)<a hidden class="anchor" aria-hidden="true" href="#2宽高位置-推荐这种">#</a></h3>
+<p>父 <code>position: relativie;</code>
+子</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">position</span><span style="color:#f92672">:</span> <span style="color:#f92672">absolute</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">top</span><span style="color:#f92672">:</span> <span style="color:#f92672">50</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">left</span><span style="color:#f92672">:</span> <span style="color:#f92672">50</span><span style="color:#f92672">%;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">translate</span><span style="color:#f92672">:</span> <span style="color:#f92672">transform</span><span style="color:#f92672">(</span><span style="color:#f92672">-50</span><span style="color:#f92672">%,</span> <span style="color:#f92672">-50</span><span style="color:#f92672">%);</span>
+</span></span></code></pre></div><h2 id="3grid-布局">3、grid 布局<a hidden class="anchor" aria-hidden="true" href="#3grid-布局">#</a></h2>
+<p>父 <code>display: grid;</code>
+子 <code>margin: auto;</code></p>
+<h2 id="4table-布局">4、table 布局<a hidden class="anchor" aria-hidden="true" href="#4table-布局">#</a></h2>
+<p>父元素（需要设置宽高）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>	<span style="color:#f92672">width</span><span style="color:#f92672">:</span> <span style="color:#f92672">50rem</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">height</span><span style="color:#f92672">:</span> <span style="color:#f92672">50rem</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">display</span><span style="color:#f92672">:</span> <span style="color:#f92672">table-cell</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">vertical-align</span><span style="color:#f92672">:</span> <span style="color:#f92672">middle</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><p>子
+<code>display: inline-block;</code></p>
+<h3 id="6绝对定位的特殊">6、绝对定位的特殊<a hidden class="anchor" aria-hidden="true" href="#6绝对定位的特殊">#</a></h3>
+<p>父 <code>position: relative;</code>
+子</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">position</span><span style="color:#f92672">:</span> <span style="color:#f92672">absolute</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">top</span><span style="color:#f92672">:</span> <span style="color:#f92672">0</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">left</span><span style="color:#f92672">:</span> <span style="color:#f92672">0</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">right</span><span style="color:#f92672">:</span> <span style="color:#f92672">0</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">bottom</span><span style="color:#f92672">:</span> <span style="color:#f92672">0</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">margin</span><span style="color:#f92672">:</span> <span style="color:#f92672">auto</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div>
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/%E5%B1%85%E4%B8%AD/">居中</a></li>
+      <li><a href="http://localhost:1313/tags/css/">Css</a></li>
     </ul>
 <nav class="paginav">
   <a class="next" href="http://localhost:1313/posts/blog/">

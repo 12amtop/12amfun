@@ -6,8 +6,22 @@
     <description>Recent content on AM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 18 Mar 2024 16:24:21 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2024 16:24:21 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo &#43; github &#43; netlify构建blog</title>
+      <link>http://localhost:1313/posts/a/</link>
+      <pubDate>Wed, 20 Mar 2024 16:24:21 +0800</pubDate>
+      <guid>http://localhost:1313/posts/a/</guid>
+      <description>前言 居中一直是一个让人头疼的问题，可以直接使用 flex 或者 grid 来直接做成效果，也可以通过一些技巧来实现同样的效果，比如一个内联元素居中可以使用 flex 的 justify-content:center; 和 align-items: center;来实现，也可以通过 text-align: center 和 line-height 来实现。需要记住，这篇文章的并不是来比较各个方法之间的优劣，只是对我所学的居中方法的梳理。 Go!
+一、水平居中 1.内联元素 内联元素居中需要在父元素上使用text-align: center; inline-block （宽度和长度生效） 父元素为块级元素使用text-align: center;水平居中。
+2.块级元素水平居中 （1）单个元素 使用margin:0 auto;
+（2）父元素为块级元素 1) 使用 table 布局左右自适应 .inner { display: table; margin: 0 auto; } 2) 多个元素在一行居中 i.将子元素设置为display:inline-block; 父元素设置text-align: center;，实现水平居中
+ii.使用display: flex; 父元素使用 display: flex; justify-cntent: center;
+3) 多个元素在一列中居中 父元素text-align:center; ，子元素margin: 0 auto;
+(3) 使用定位(position)居中 父元素position: relative;，子元素position: absolute;
+position: absolute; left: 50%; transform: translateX(-50%); 4、浮动元素水平居中 清除浮动。</description>
+    </item>
     <item>
       <title>hugo &#43; github &#43; netlify构建blog</title>
       <link>http://localhost:1313/posts/blog/</link>

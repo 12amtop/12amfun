@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Blog | AM</title>
+<title>居中 | AM</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/tags/blog/">
+<link rel="canonical" href="http://localhost:1313/tags/%E5%B1%85%E4%B8%AD/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.4599eadb9eb2ad3d0a8d6827b41a8fda8f2f4af226b63466c09c5fddbc8706b7.css" integrity="sha256-RZnq256yrT0KjWgntBqP2o8vSvImtjRmwJxf3byHBrc=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/blog/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/blog/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/%E5%B1%85%E4%B8%AD/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/%E5%B1%85%E4%B8%AD/">
 <noscript>
     <style>
         #theme-toggle,
@@ -125,26 +125,29 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Blog
+    居中
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://raw.githubusercontent.com/stevechen1/pic/master/001.png" alt="room">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Blog
+    <h2 class="entry-hint-parent">hugo &#43; github &#43; netlify构建blog
     </h2>
   </header>
   <div class="entry-content">
-    <p>一、安装 安装hugo (windows)
-winget install Hugo.Hugo.Extended 其他的根据官网安装
-hugo version //hugo v0.123.8-5fed9c591b694f314e5939548e11cc3dcb79a79c&#43;extended windows/amd64 BuildDate=2024-03-07T13:14:42Z VendorInfo=gohugoio 成功 git安装略过
-二、创建页面 hugo new site test --format yaml 安装主题 （其他的可以自己试，根据文档设置，主题官网）
-git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 编辑hugo.yaml 添加 theme=PaperMod
-添加第一篇文章 hugo new posts/first.md 注意：自动生成的md文件中 draft 默认为true，改成false 建议不使用，因为我设置的是yaml，创建一个yaml格式的更好用
---- title: &#34;First&#34; date: 2022-12-22T08:39:46&#43;08:00 draft: false tags: [&#39;html&#39;,&#39;css&#39;] categories: [&#39;frontend&#39;] cover: image: img/cover1.jpg alt: &#39;single girl&#39; caption: &#39;wow&#39; --- # hello!!! welcome to my blog hugo server # 页面启动 添加参数...</p>
+    <p>前言 居中一直是一个让人头疼的问题，可以直接使用 flex 或者 grid 来直接做成效果，也可以通过一些技巧来实现同样的效果，比如一个内联元素居中可以使用 flex 的 justify-content:center; 和 align-items: center;来实现，也可以通过 text-align: center 和 line-height 来实现。需要记住，这篇文章的并不是来比较各个方法之间的优劣，只是对我所学的居中方法的梳理。 Go!
+一、水平居中 1.内联元素 内联元素居中需要在父元素上使用text-align: center; inline-block （宽度和长度生效） 父元素为块级元素使用text-align: center;水平居中。
+2.块级元素水平居中 （1）单个元素 使用margin:0 auto;
+（2）父元素为块级元素 1) 使用 table 布局左右自适应 .inner { display: table; margin: 0 auto; } 2) 多个元素在一行居中 i.将子元素设置为display:inline-block; 父元素设置text-align: center;，实现水平居中
+ii.使用display: flex; 父元素使用 display: flex; justify-cntent: center;
+3) 多个元素在一列中居中 父元素text-align:center; ，子元素margin: 0 auto;
+(3) 使用定位(position)居中 父元素position: relative;，子元素position: absolute;
+position: absolute; left: 50%; transform: translateX(-50%); 4、浮动元素水平居中 清除浮动。...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-03-18 16:24:21 +0800 CST'>March 18, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Blog" href="http://localhost:1313/posts/test/"></a>
+  <footer class="entry-footer"><span title='2024-03-20 16:24:21 +0800 CST'>March 20, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to hugo &#43; github &#43; netlify构建blog" href="http://localhost:1313/posts/a/"></a>
 </article>
     </main>
     

@@ -6,8 +6,15 @@
     <description>Recent content in Categories on AM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 18 Mar 2024 16:24:21 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2024 16:24:21 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>居中</title>
+      <link>http://localhost:1313/categories/%E5%B1%85%E4%B8%AD/</link>
+      <pubDate>Wed, 20 Mar 2024 16:24:21 +0800</pubDate>
+      <guid>http://localhost:1313/categories/%E5%B1%85%E4%B8%AD/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hugo</title>
       <link>http://localhost:1313/categories/hugo/</link>

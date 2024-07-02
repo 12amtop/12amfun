@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/categories/%E5%B1%85%E4%B8%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo &#43; github &#43; netlify构建blog</title>
-      <link>http://localhost:1313/posts/a/</link>
+      <link>http://localhost:1313/posts/%E5%B1%85%E4%B8%AD/</link>
       <pubDate>Wed, 20 Mar 2024 16:24:21 +0800</pubDate>
-      <guid>http://localhost:1313/posts/a/</guid>
+      <guid>http://localhost:1313/posts/%E5%B1%85%E4%B8%AD/</guid>
       <description>前言 居中一直是一个让人头疼的问题，可以直接使用 flex 或者 grid 来直接做成效果，也可以通过一些技巧来实现同样的效果，比如一个内联元素居中可以使用 flex 的 justify-content:center; 和 align-items: center;来实现，也可以通过 text-align: center 和 line-height 来实现。需要记住，这篇文章的并不是来比较各个方法之间的优劣，只是对我所学的居中方法的梳理。 Go!
 一、水平居中 1.内联元素 内联元素居中需要在父元素上使用text-align: center; inline-block （宽度和长度生效） 父元素为块级元素使用text-align: center;水平居中。
 2.块级元素水平居中 （1）单个元素 使用margin:0 auto;
